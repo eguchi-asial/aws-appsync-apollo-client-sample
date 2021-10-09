@@ -3,6 +3,8 @@
 
 $npm install
 
+edit your .env.example => .env
+
 ### RUN
 
-$ npx tsc && node dist/index.js
+$ npm run dev
