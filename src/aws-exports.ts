@@ -8,9 +8,6 @@
 // };
 
 // export default awsmobile;
-
-'use strict';
-Object.defineProperty(exports, "__esModule", { value: true });
 const config = {
     aws_appsync_host: 'https://aaiacvhtirajlnci33aamrwkxy.appsync-api.ap-northeast-1.amazonaws.com',
     aws_appsync_region: 'ap-northeast-1',
@@ -19,5 +16,5 @@ const config = {
     // TODO tmp
     aws_appsync_apiKey: 'da2-3gxozijn55gadoylwnbix4pbpq'
 };
-config.aws_appsync_endpoint = 'https://' + config.HOST + config.PATH;
-exports.default = config;
+config.aws_appsync_endpoint = config.aws_appsync_host + config.aws_appsync_path;
+export default config;
