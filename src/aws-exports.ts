@@ -8,13 +8,14 @@
 // };
 
 // export default awsmobile;
+import { config as doeenvConfig } from 'dotenv';
+doeenvConfig();
 const config = {
-    aws_appsync_host: 'https://aaiacvhtirajlnci33aamrwkxy.appsync-api.ap-northeast-1.amazonaws.com',
-    aws_appsync_region: 'ap-northeast-1',
+    aws_appsync_host: process.env.AWS_APPSYNC_HOST as string,
+    aws_appsync_region: process.env.AWS_APPSYNC_REGION as string,
     aws_appsync_path: '/graphql',
     aws_appsync_endpoint: '',
-    // TODO tmp
-    aws_appsync_apiKey: 'da2-3gxozijn55gadoylwnbix4pbpq'
+    aws_appsync_apiKey: process.env.AWS_APPSYNC_APIKEY as string
 };
 config.aws_appsync_endpoint = config.aws_appsync_host + config.aws_appsync_path;
 export default config;

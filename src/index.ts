@@ -37,8 +37,8 @@ const client = new ApolloClient({
 });
 
 //Now run a query
+//client.query({ query: query, fetchPolicy: 'network-only' })   //Uncomment for AWS Lambda
 client.query({ query: gql(listEvents) })
-  //client.query({ query: query, fetchPolicy: 'network-only' })   //Uncomment for AWS Lambda
   .then(function logData({ data }: any) {
     console.log('results of query: ', data.listEvents);
   })

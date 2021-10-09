@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "npx tsc && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -15,6 +16,7 @@
     "apollo-link-http": "^1.5.17",
     "aws-appsync": "^4.1.2",
     "aws-sdk": "^2.1001.0",
+    "dotenv": "^10.0.0",
     "es6-promise": "^4.2.8",
     "graphql": "^15.6.1",
     "graphql-tag": "^2.12.5",
