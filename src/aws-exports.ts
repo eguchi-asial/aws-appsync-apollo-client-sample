@@ -8,8 +8,8 @@
 // };
 
 // export default awsmobile;
-import { config as doeenvConfig } from 'dotenv';
-doeenvConfig();
+import { config as dotenvConfig } from 'dotenv';
+dotenvConfig();
 const config = {
     aws_appsync_host: process.env.AWS_APPSYNC_HOST as string,
     aws_appsync_region: process.env.AWS_APPSYNC_REGION as string,
